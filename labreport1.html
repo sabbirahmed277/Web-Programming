@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 40px 150px;
+            background-image: url(./image/HiddenLayer-Homepage-–-Slide-5.jpg);
+        }
+
+        h1,
+        p {
+            color: white;
+        }
+
+        .input-field {
+            display: flex;
+            align-items: center;
+        }
+
+        .input {
+            display: flex;
+            padding: 15px;
+            margin-left: 100px;
+        }
+
+        .input-dash {
+            padding: 10px;
+            border-radius: 5px;
+            width: 50vh;
+        }
+
+        .input2 {
+            display: flex;
+            align-items: center;
+        }
+
+        .input-dash2 {
+            width: 105vh;
+            padding: 10px;
+            border-radius: 5px;
+            margin-left: 114px;
+        }
+
+        .phone-input {
+            display: flex;
+            align-items: center;
+        }
+
+        .input-dash3 {
+            width: 31vh;
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+
+        .input-phone {
+            margin-left: 150px;
+        }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <div>
+        <h1>Contact Form</h1>
+        <div class="hh">
+            <div class="input-field">
+                <div>
+                    <p>Your Name :</p>
+                </div>
+                <div class="input">
+                    <input style="margin-right: 10px;" type="text" class="input-dash" placeholder="First Name" name=""
+                        id="">
+                    <input type="text" class="input-dash" placeholder="Last Name" name="" id="">
+                </div>
+            </div>
+            <div class="input2">
+                <p>Your Email : </p>
+                <input type="text" class="input-dash2" placeholder="Write your email" name="" id="">
+            </div>
+            <div class="phone-input">
+                <div>
+                    <p>Phone : </p>
+                </div>
+                <div class="input-phone">
+                    <input type="text" class="input-dash3" placeholder="***" name="" id="">
+                    <input type="text" class="input-dash3" style="margin: 10px;" placeholder="*****" name="" id="">
+                    <input type="text" class="input-dash3" placeholder="****" name="" id="">
+                </div>
+            </div>
+            <div>
+                <label style="color: white;">District</label>
+                <select style="width: 50vh;padding: 10px; margin-left: 145px;">
+                    <option value="dhaka">Dhaka</option>
+                    <option value="ctg">Chittagong</option>
+                    <option value="comilla">Comilla</option>
+                </select>
+            </div>
+            <div style="display: flex; margin-top: 10px;">
+                <p>Message : </p>
+                <textarea name="" style="margin-left: 133px;width: 107vh; border-radius: 5px;" id="" cols="30"
+                    rows="10"></textarea>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <p>Verification : </p>
+                <div style="margin-left: 114px; margin-top: 10px;" class="g-recaptcha"        data-sitekey="6Ld91pUpAAAAANajTxJZ_dUjY5mMnLPaEi4KTZeP"></div>
+            </div>
+            <hr>
+            <button style="background-color: rgb(42, 42, 179); color: white; padding: 10px 20px; border-radius: 5px;cursor: pointer; margin-top: 10px;">Submit Form</button>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
